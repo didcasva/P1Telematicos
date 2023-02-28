@@ -1,0 +1,14 @@
+$ORIGIN didier.com.
+$TTL 3H
+@	IN SOA	ns1.didier.com. root@didier.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@ 	IN 	NS	ns1.didier.com.
+;host en la zona
+ns1 IN A  	192.168.50.3
+parcial IN A 192.168.50.3
+www    IN CNAME parcial
+

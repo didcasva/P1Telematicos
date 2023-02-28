@@ -1,0 +1,15 @@
+$ORIGIN didcasva.com.
+$TTL 3H
+@	IN SOA	server.didcasva.com root@didcasva.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@ 	IN 	NS	server.didcasva.com.
+;host en la zona
+server IN A  	192.168.50.3
+cliente IN A 192.168.50.2
+user IN CNAME cliente
+www    IN CNAME server
+
